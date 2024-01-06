@@ -1,0 +1,36 @@
+---
+import "./index.css";
+import Navigation from "../Navigation/Navigation";
+---
+
+<script>
+  import "./index.js";
+</script>
+
+<header>
+  <div class="nav-container">
+    <button class="switch-open-menu reset-button">
+      <img src="/assets/svgs/menu.svg" alt="menu" />
+    </button>
+
+    <div class="menu page">
+      <div class="switch-container">
+        <button class="switch-close-menu reset-button">
+          <img src="/assets/svgs/close.svg" alt="menu" />
+        </button>
+      </div>
+
+      <Navigation />
+    </div>
+  </div>
+
+  <div>
+    <button
+      aria-describedby="configuration"
+      title="Configuration"
+      class="reset-button"
+    >
+      <img src="/assets/svgs/settings.svg" alt="configuration" />
+    </button>
+  </div>
+</header>

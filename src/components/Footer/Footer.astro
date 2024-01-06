@@ -1,9 +1,9 @@
 ---
-
+import "./index.css";
 ---
 
 <footer>
-  <a title="home" target="_blank" href="/" class="home">
+  <a title="home" href="/" class="home">
     <div class="logo-container">
       <div class="logo-animate"></div>
     </div>
@@ -49,58 +49,3 @@
     </a>
   </nav>
 </footer>
-
-<style>
-  .home {
-    display: block;
-    position: relative;
-    width: 37px;
-    height: 37px;
-  }
-
-  .logo-container {
-    position: absolute;
-    left: 0;
-    width: 37px;
-    height: 37px;
-    overflow: hidden;
-    border-radius: 50%;
-  }
-
-  .logo-animate {
-    position: absolute;
-    left: -90px;
-    top: -20px;
-    width: 370px;
-    height: 370px;
-    background: linear-gradient(
-      90deg,
-      #000000,
-      #03dac6,
-      #240070,
-      #001aff,
-      #ffffff,
-      #1d1c39,
-      #bb86fc,
-      #9c6add,
-      #572c97
-    );
-    animation: spin 5s ease-in infinite;
-    border-radius: 50%;
-    z-index: 10;
-  }
-
-  .logo {
-    position: absolute;
-    z-index: 20;
-  }
-
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-</style>

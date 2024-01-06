@@ -14,10 +14,38 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Montserrat Variable", sans-serif;
   background-color: var(--bg-100);
+  width: 100vw;
+  height: 100dvh;
 }
 
 .logo {
   width: 37px;
   height: 37px;
+}
+
+.reset-button {
+  background-color: transparent;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.reset-button:active {
+  transform: scale(80%);
+}
+
+.page {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "League Spartan Variable", sans-serif;
+  font-weight: bold;
 }
