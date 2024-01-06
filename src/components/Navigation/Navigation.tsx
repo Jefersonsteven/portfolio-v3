@@ -1,10 +1,11 @@
 import { useState } from "react";
-
+ 
 export default function Navigation() {
     const [route, setRoute] = useState('home');
     
     function handleRouteChange(event: React.MouseEvent<HTMLAnchorElement>) {
-        setRoute(event.currentTarget.hash.slice(1));
+        setRoute('contact');
+        console.log(event.target);
     }
 
     return (
