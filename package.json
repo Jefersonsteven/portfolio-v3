@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "d_prefer": "astro preferences disable devToolbar",
+    "a_prefer": "astro preferences enable devToolbar"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
