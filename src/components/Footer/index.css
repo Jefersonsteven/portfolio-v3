@@ -1,8 +1,8 @@
-.home {
-  display: block;
-  position: relative;
-  width: 37px;
-  height: 37px;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
 }
 
 .logo-container {
@@ -42,6 +42,10 @@
   z-index: 20;
 }
 
+.copy {
+  text-align: center;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -49,4 +53,10 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }

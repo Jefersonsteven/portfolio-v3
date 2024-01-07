@@ -4,8 +4,8 @@ export default function Navigation() {
     const [route, setRoute] = useState('home');
     
     function handleRouteChange(event: React.MouseEvent<HTMLAnchorElement>) {
-        setRoute('contact');
-        console.log(event.target);
+        const menu = document.querySelector('.menu');
+        menu && menu.classList.remove('active');
     }
 
     return (

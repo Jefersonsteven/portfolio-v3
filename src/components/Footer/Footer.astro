@@ -2,7 +2,7 @@
 import "./index.css";
 ---
 
-<footer>
+<footer class="page">
   <a title="home" href="/" class="home">
     <div class="logo-container">
       <div class="logo-animate"></div>
@@ -10,7 +10,7 @@ import "./index.css";
     <img src="/assets/svgs/logo-dynamic.png" alt="Logo" class="logo" />
   </a>
 
-  <div>
+  <p class="copy">
     <span>
       Designed in Figma and coded in Visual Studio Code by yours truly
     </span>
@@ -23,13 +23,15 @@ import "./index.css";
       Built with Astro, Reactjs, Prisma and CSS, implemented with Vercel. All
       text is set in League Spartan and Montserrat font.
     </span>
-  </div>
+  </p>
 
   <nav class="socials">
     <a
       class="social-option"
       target="_blank"
       href="https://github.com/Jefersonsteven"
+      aria-label="Github"
+      title="Github"
     >
       <img src="/assets/svgs/github.svg" alt="Github" />
     </a>
@@ -37,6 +39,8 @@ import "./index.css";
       class="social-option"
       target="_blank"
       href="https://www.linkedin.com/in/jeffersonsteven/"
+      aria-label="Linkedin"
+      title="Linkedin"
     >
       <img src="/assets/svgs/linkedin.svg" alt="Linkedin" />
     </a>
@@ -44,8 +48,19 @@ import "./index.css";
       class="social-option"
       target="_blank"
       href="https://www.instagram.com/jefersonsteven_/"
+      aria-label="Instagram"
+      title="Instagram"
     >
       <img src="/assets/svgs/instagram.svg" alt="Instagram" />
     </a>
   </nav>
 </footer>
+
+<style>
+  .home {
+    display: block;
+    position: relative;
+    width: 37px;
+    height: 37px;
+  }
+</style>

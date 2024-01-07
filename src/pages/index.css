@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 84px);
+  & main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  & .home__title {
+    background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.home__scroll-for-more::before {
+  content: "Swipe for more";
+}
+
+.home__arrow-scroll {
+  transform: rotate(90deg) scale(40%);
+}
+
+@media (width > 1100px) {
+  .home__scroll-for-more::before {
+    content: "Scroll for more";
+  }
+}

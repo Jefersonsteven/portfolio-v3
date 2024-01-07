@@ -5,6 +5,8 @@ header {
 }
 
 .nav-container {
+  display: flex;
+  align-items: center;
 }
 
 .menu {
@@ -18,6 +20,7 @@ header {
   left: 0;
   background: var(--bg-100);
   z-index: 60;
+  animation: swipe 0.5s ease-in-out both;
 }
 
 .active {
@@ -86,4 +89,13 @@ header {
 
 .circle-nav--disable {
   background: var(--bg-100);
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
