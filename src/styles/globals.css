@@ -45,6 +45,11 @@ body {
   padding: 20px;
 }
 
+p {
+  line-height: 125%
+  letter-spacing: 0.32px;
+}
+
 h1,
 h2,
 h3,
@@ -82,4 +87,23 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: var(--h1);
+}
+
+.heading {
+  background: linear-gradient(180deg, #03DAC6 0%, rgba(15, 12, 41, 0.00) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: var(--h1);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+
+a:hover {
+  color: var(--primary-100);
+  border-bottom: 1px solid var(--accent-100);
 }

@@ -59,4 +59,13 @@ footer {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  & a {
+    border: none;
+  }
+  & a:hover {
+    border: none;
+    & svg path {
+      fill: var(--primary-100);
+    }
+  }
 }

@@ -1,5 +1,6 @@
 ---
 import "./index.css";
+import Socials from "../Socials/Socials.astro";
 ---
 
 <footer class="page">
@@ -25,35 +26,7 @@ import "./index.css";
     </span>
   </p>
 
-  <nav class="socials">
-    <a
-      class="social-option"
-      target="_blank"
-      href="https://github.com/Jefersonsteven"
-      aria-label="Github"
-      title="Github"
-    >
-      <img src="/assets/svgs/github.svg" alt="Github" />
-    </a>
-    <a
-      class="social-option"
-      target="_blank"
-      href="https://www.linkedin.com/in/jeffersonsteven/"
-      aria-label="Linkedin"
-      title="Linkedin"
-    >
-      <img src="/assets/svgs/linkedin.svg" alt="Linkedin" />
-    </a>
-    <a
-      class="social-option"
-      target="_blank"
-      href="https://www.instagram.com/jefersonsteven_/"
-      aria-label="Instagram"
-      title="Instagram"
-    >
-      <img src="/assets/svgs/instagram.svg" alt="Instagram" />
-    </a>
-  </nav>
+  <Socials />
 </footer>
 
 <style>
@@ -62,5 +35,6 @@ import "./index.css";
     position: relative;
     width: 37px;
     height: 37px;
+    border: none;
   }
 </style>
